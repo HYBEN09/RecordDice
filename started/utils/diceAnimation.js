@@ -6,7 +6,7 @@
 const cube = document.querySelector('#cube')
 
 
-gsap.to(cube,{duration:2,rotationX:1500,rotationY:-1500})
+gsap.to(cube,{duration:2,rotationX:300,rotationY:-300})
 
 const diceAnimation = function() {
  
@@ -31,7 +31,7 @@ const diceAnimation = function() {
     [-180,0], // 6
   ]
 
-  gsap.to(cube,{ease:'linear',duration:0.1,z:-100,rotationX:rotationValue[random][0],rotationY:rotationValue[random][1],onComplete:complete})
+  gsap.to(cube,{ease:'linear',duration:0.2,z:-100,rotationX:rotationValue[random][0],rotationY:rotationValue[random][1],onComplete:complete})
 
   // diceNumber == 6 ? 1 : diceNumber++;
 
